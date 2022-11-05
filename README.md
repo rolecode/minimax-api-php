@@ -1,6 +1,6 @@
 # Minimax api php library
 
-Library is still in develepment and is limited with features. More features will be added in the future.
+Library is still in development and is limited with features. More features will be added in the future.
 
 ## Summary
 1. [Installation](#installation)
@@ -9,7 +9,7 @@ Library is still in develepment and is limited with features. More features will
 
 
 ## Installation
-You can install this library with composer:
+You can install library with composer:
 ```
 composer require rolecode/php-minimax
 ```
