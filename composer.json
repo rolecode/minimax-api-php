@@ -1,0 +1,17 @@
+{
+    "name": "rolecode/php-minimax",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Rolecode\\PhpMinimax\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "netresearch/jsonmapper": "^4.0"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
