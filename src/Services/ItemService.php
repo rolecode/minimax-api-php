@@ -3,6 +3,7 @@
 namespace Rolecode\PhpMinimax\Services;
 
 use GuzzleHttp\Exception\ClientException;
+use Rolecode\PhpMinimax\Models\Customer;
 use Rolecode\PhpMinimax\Models\Item;
 use Rolecode\PhpMinimax\Services\Requests\AllRequestService;
 use Rolecode\PhpMinimax\Services\Requests\CreateRecordRequest;
@@ -40,6 +41,22 @@ class ItemService extends CoreServiceFactory
     public function retrieveById( $id )
     {
         $record = RetrieveRequestService::retrieveById( $this->getClient(), "items", Item::class, $id );
+
+        return $record;
+    }
+
+    /**
+     * Retrieve record by code.
+     *
+     * @param string $code
+     *
+     * @throws ClientException if the request fails
+     *
+     * @return Item
+     */
+    public function retrieveByCode( $code )
+    {
+        $record = RetrieveRequestService::retrieveByCode( $this->getClient(), "items", Item::class, $code );
 
         return $record;
     }
