@@ -63,6 +63,10 @@ class RetrieveRequestService
      */
     public static function retrieveByCode( $client, $slug, $className, $code )
     {
+        // Error is returned if code is empty.
+        if( empty($code))
+            return [];
+
         // Retrieve organisation id.
         $organisationId = $client->getOrganisationId();
 
