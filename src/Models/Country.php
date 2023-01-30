@@ -15,4 +15,5 @@ class Country
     public $Name;
     // Country currency.
     public $Currency;
+
 }
