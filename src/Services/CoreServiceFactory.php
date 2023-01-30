@@ -30,6 +30,7 @@ abstract class CoreServiceFactory
         'vatRates' => VatRateService::class,
         'paymentMethods' => PaymentMethodService::class,
         'documentAttachments' => DocumentAttachmentService::class,
+        'countries' => CountryService::class,
     ];
 
     /**

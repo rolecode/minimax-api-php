@@ -3,6 +3,7 @@
 namespace Rolecode\PhpMinimax;
 
 use Rolecode\PhpMinimax\Services\CoreServiceFactory;
+use Rolecode\PhpMinimax\Services\CountryService;
 use Rolecode\PhpMinimax\Services\CustomerService;
 use Rolecode\PhpMinimax\Services\DocumentAttachmentService;
 use Rolecode\PhpMinimax\Services\DocumentNumberingService;
@@ -28,6 +29,7 @@ use Rolecode\PhpMinimax\Services\VatRateService;
  * @property VatRateService $vatRates
  * @property PaymentMethodService $paymentMethods
  * @property DocumentAttachmentService $documentAttachments
+ * @property CountryService $countries
  */
 class MinimaxClient extends BaseMinimaxClient
 {
